@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paolo Malerba | Generative AI Portfolio</title>
+  <!-- Serif font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Readability‑focused palette */
+      --primary: #4caf50;   /* vivid green with strong contrast on black */
+      --accent:  #8bc34a;   /* lighter green accent */
+      --text-dark: #212121;
+      --bg-light: #ffffff;
+      --bg-muted: #f4faf6;  /* very light green tint */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--bg-light);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      font-weight: 700;
+      transition: opacity 0.2s ease;
+    }
+
+    header nav a:hover {
+      opacity: 0.85;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(rgba(76,175,80,0.65), rgba(76,175,80,0.65)), url('hero.jpg') center/cover no-repeat;
+      color: var(--bg-light);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--bg-muted);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .submissions ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--bg-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid var(--bg-light);
+      border-radius: 0.375rem;
+      color: var(--bg-light);
+      margin-top: 1.5rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--bg-light);
+      color: var(--primary);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-light: #121212;  /* near‑black background for dark mode */
+        --text-dark: #e0e0e0;
+        --bg-muted: #1d1f1d;
+      }
+      body {
+        background: var(--bg-light);
+        color: var(--text-dark);
+      }
+      section:nth-of-type(even) {
+        background: var(--bg-muted);
+      }
+      /* improve contrast of buttons in dark mode */
+      .btn {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .btn:hover {
+        background: var(--accent);
+        color: var(--bg-light);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Paolo Malerba</div>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="#course">About the course</a>
+      <a href="#submissions">Weekly submissions</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm Paolo</h1>
+    <p>Medical Doctor, researcher &amp; PhD candidate exploring how Generative AI can amplify impact in global health and humanitarian research.</p>
+    <a href="#about" class="btn">Discover more</a>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I am a PhD candidate at CRIMEDIM (Research Center for Disaster Medicine, Humanitarian Aid, and Global Health) with a medical background and a specialization in Internal Medicine. My research focuses on the destructive impact of armed conflicts on health systems and possible solutions to ensure continuity of care for conflict-affected populations. Passionate about social justice, I advocate for health as a fundamental human right, particularly for marginalized populations.</p>
+  </section>
+
+  <section id="course">
+    <h2>About the course</h2>
+    <p><strong>Generative AI for Work &amp; Research Productivity</strong> is an 8‑week live online certification focused on no‑code AI tools for task automation and research support. Key outcomes include:</p>
+    <ul>
+      <li>Automate document, spreadsheet, and data workflows</li>
+      <li>Organize knowledge and accelerate literature reviews</li>
+      <li>Build custom chatbots and AI presentations</li>
+      <li>Complete a hands‑on capstone project</li>
+    </ul>
+    <p>The next cohort begins <strong>July&nbsp;13, 2025</strong> with weekly 2‑hour workshops (Friday&nbsp;3 pm GMT or Sunday&nbsp;5 pm GMT).</p>
+  </section>
+
+  <section id="submissions" class="submissions">
+    <h2>My weekly submissions</h2>
+    <p>Links to each week’s project will appear here as the course progresses:</p>
+    <ul>
+      <li>Week&nbsp;1 – Coming soon</li>
+      <li>Week&nbsp;2 – Coming soon</li>
+      <li>Week&nbsp;3 – Coming soon</li>
+      <li>Week&nbsp;4 – Coming soon</li>
+      <li>Week&nbsp;5 – Coming soon</li>
+      <li>Week&nbsp;6 – Coming soon</li>
+      <li>Week&nbsp;7 – Coming soon</li>
+      <li>Week&nbsp;8 – Coming soon</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Paolo Malerba. Built with passion and lots of coffee.
+  </footer>
+
+</body>
+</html>
